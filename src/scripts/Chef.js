@@ -8,7 +8,7 @@ export default class Chef {
     this.init();
   }
   init() {
-    const poutines = this.element.querySelectorAll('[data-poutine]');
+    const poutines = this.element.querySelectorAll('.js-poutine');
     for (let i = 0; i < poutines.length; i++) {
       const poutine = new Poutine(poutines[i]);
       this.menu.push(poutine);
